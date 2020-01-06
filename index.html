@@ -1,0 +1,267 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  
+  <style>
+    header {
+      background-image: url('./assets/background.jpg');
+      background-position: center;
+      background-size: cover;
+      min-height: 800px;
+    }
+    .parallax-container {
+      max-height: 300px;
+    }
+    .tabs .indicator {
+      background-color: #4a148c;
+    }
+    .tabs .tab a:focus, .tabs .tab a:focus.active {
+      background-color: transparent;
+    }
+    @media screen and (max-width: 700px){
+      header {
+        min-height: 400px;
+      }
+      h3, p {
+        text-align: center;
+      }
+      .valign-wrapper {
+        display: block;
+        text-align: center;
+      }
+      .align-center-on-mobile {
+        text-align: center;
+      }
+    }
+  </style>
+  <title>Materialize CSS</title>
+</head>
+<body>
+  <!-- navbar -------- -->
+  <header>
+    <nav class="nav-wrapper transparent">
+      <div class="container">
+        <a href="#" class="brand-logo">Photo Finder</a>
+        <a href="#"  class="sidenav-trigger" data-target="slide-out"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li class="white-text"><a href="">Photos</a></li>
+          <li class="white-text"><a href="">Services</a></li>
+          <li class="white-text"><a href="">Contact</a></li>
+
+        </ul>
+      </div>
+    </nav>
+
+    <!--   ------------------------sidenav  -------------------------- -->
+    <ul class="sidenav" id="slide-out">
+      <li class="white-text"><a class="active" href=""><i class="material-icons">monochrome_photos</i>Photos</a></li>
+      <li class="white-text"><a href=""><i class="material-icons">room_service</i>Services</a></li>
+      <li class="white-text"><a href=""><i class="material-icons">perm_contact_calendar</i>Contact</a></li>
+      
+    </ul>
+          
+
+  </header>
+  <section class="container section">
+    <div class="row">
+      <div class="col s12 l4 offset-l1">
+        <img src="assets/back2.jpg" alt="img" class="responsive-img materialboxed">
+      </div>
+      <div class="col s12 l5 offset-l1">
+        <h3 class="pink-text text-darken-3">Palampur</h3>
+        <p class="purple-text text-darken-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 l4 push-l8">
+        <img src="assets/back3.jpg" alt="img" class="responsive-img materialboxed">
+      </div>
+      <div class="col s12 l5 offset-l2 pull-l4 right-align">
+        <h3 class="pink-text text-darken-3">Dubai</h3>
+        <p class="purple-text text-darken-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 l4 offset-l1">
+        <img src="assets/back4.jpg" alt="img" class="responsive-img materialboxed">
+      </div>
+      <div class="col s12 l6 offset-l1 ">
+        <h3 class="pink-text text-darken-3 ">Thailand</h3>
+        <p class="purple-text text-darken-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+           sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+      </div>
+    </div> 
+  </section>
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="assets/back2.jpg" alt="" class="responsive-img">
+    </div>
+  </div>
+
+  <div class="container section">
+    <div class="row valign-wrapper">
+      <div class="col s12 l4">
+        <h4 class="pink-text text-darken-3">Something to say</h4>
+        <p class="purple-text text-darken-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+        <p class="purple-text text-darken-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+      </div>
+      <div class="col s12 l6 offset-l2">
+        <ul class="tabs">
+          <li class="tab col s6 pink-text text-darken-3" >
+            <a href="#Photography" class="active pink-text text-darken-3" >Photography</a>
+          </li>
+          <li class="tab col s6 pink-text text-darken-3">
+            <a href="#Editing " class="pink-text text-darken-3"  >Editing</a>
+          </li>
+        </ul>
+        <div id="Photography" class="col s12 ">
+          <p class="purple-text text-darken-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+          <p class="purple-text text-darken-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+        </div>
+        <div id="Editing" class="col s12">
+          <p class="purple-text text-darken-2"> consectetur adipiscing elit, Lorem ipsum dolor sit amet,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+          <p class="purple-text text-darken-2"> consectetur adipiscing elit, Lorem ipsum dolor sit amet,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="assets/back2.jpg" alt="" class="responsive-img">
+    </div>
+  </div>
+
+  <section class="container section">
+    <div class="row valign-wrapper">
+      <div class="col s12 l5">
+        <h4 class="pink-text text-darken-3">Get in touch</h4>
+        <p class="purple-text text-darken-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et</p>
+      </div>
+      <div class="col s12 l6 offset-l">
+        <form action="">
+          <div class="input-field">
+            <i class="material-icons prefix pink-text text-darken-3">email</i>
+            <label for="email">Email</label>
+            <input type="email" id="email">
+          </div>
+          <div class="input-field">
+            <i class="material-icons prefix pink-text text-darken-3">phone</i>
+            <label for="mobile">Phone</label>
+            <input type="tel" id="mobile" pattern="[0-9]{10}">
+          </div>
+          <div class="input-field">
+            <i class="material-icons prefix pink-text text-darken-3">message</i>
+            <label for="message">Message</label>
+            <textarea name="message" id="message"  class="materialize-textarea"></textarea>
+          </div>
+          <div class="input-field">
+            <i class="material-icons prefix pink-text text-darken-3">date_range</i>
+            <input type="text" class="datepicker" id="date">
+            <label for="date">Appointment Date</label>
+          </div>
+          <div class="input-field col s6 l6 ">
+            <p class="flow-text pink-text text-darken-3">Services Required</p>
+            <p>
+              <label>
+                <input type="checkbox" class="filled-in" checked="checked" />
+                <span>Website</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="checkbox" class="filled-in" />
+                <span>Mobile App</span>
+              </label>
+            </p>
+          </div>
+          <div class="input-field col s6 l6">
+            <p class="flow-text pink-text text-darken-3">Select radio</p>
+            <p>
+              <label>
+                <input type="radio" name="prof" id="Website" class="purple-text text-darken-2">
+                <span class="purple-text text-darken-2">Website</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input type="radio" name="prof" id="Mobile" class="purple-text text-darken-2">
+                <span class="purple-text text-darken-2">Mobile</span>
+              </label>
+            </p>
+          </div>
+          <div class="row">
+          <div class="center col s12 l12">
+          <button class="btn waves-effect waves-light purple" type="submit" name="action">Submit
+            <i class="material-icons right">send</i>
+          </button>
+          </div>
+        </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="page-footer grey darken-3">
+    <div class="container align-center-on-mobile">
+      <div class="row">
+        <div class="col s12 l6">
+          <h4> Message </h4>
+          <p> This is just to learn materialize and do some stuff with it. It quite cool and now i know it </p>
+        </div>
+        <div class="col s12 l4 offset-l2">
+          <h5>Connect</h5>
+          <ul>
+            <li><a href="" class="grey-text text-lighten-3">Facebook</a></li>
+            <li><a href="" class="grey-text text-lighten-3">Github</a></li>
+            <li><a href="" class="grey-text text-lighten-3">LinkedIn</a></li>
+            <li><a href="" class="grey-text text-lighten-3">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright grey darken-4">
+      <div class="container center">
+      &copy; Copyright stuff
+      
+      </div>
+    </div>
+  </footer>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+      document.addEventListener('DOMContentLoaded', function() {
+      var sidenav = document.querySelectorAll('.sidenav');
+      var instances = M.Sidenav.init(sidenav, {});
+      var materialbox = document.querySelectorAll('.materialboxed');
+      var instances = M.Materialbox.init(materialbox, {});
+      var parallax = document.querySelectorAll('.parallax');
+      var instances = M.Parallax.init(parallax, {});
+      var tabs = document.querySelectorAll('.tabs');
+      var instance = M.Tabs.init(tabs, {});
+      M.Datepicker.init(document.querySelectorAll('.datepicker'), { disableWeekends: true});
+    });
+    
+    
+  </script>
+</body>
+</html>
